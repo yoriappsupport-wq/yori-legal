@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yori サポート</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic', sans-serif;
+      background: #0d0d1a;
+      color: #e8e8f0;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 40px 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid #2a2a4a;
+    }
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 14px;
+      color: #8888aa;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 20px;
+      background: #12122a;
+      border-bottom: 1px solid #2a2a4a;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #aaaacc;
+      text-decoration: none;
+      font-size: 13px;
+      padding: 6px 14px;
+      border: 1px solid #2a2a4a;
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    nav a:hover { color: #ffffff; border-color: #6666aa; background: #1a1a3a; }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    section { margin-bottom: 48px; }
+    section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ccccff;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #2a2a4a;
+    }
+    .faq-item {
+      background: #13132b;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 16px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ddddff;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-q::after { content: '▼'; font-size: 11px; color: #6666aa; }
+    .faq-a {
+      padding: 0 20px 16px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #9999bb;
+    }
+    .contact-box {
+      background: #13132b;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .contact-box p { font-size: 14px; color: #9999bb; margin-bottom: 16px; line-height: 1.8; }
+    .contact-box a {
+      display: inline-block;
+      background: linear-gradient(135deg, #4444aa, #6666cc);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 32px;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .contact-box a:hover { opacity: 0.85; }
+    .links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .links a {
+      flex: 1;
+      min-width: 140px;
+      display: block;
+      background: #13132b;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: center;
+      text-decoration: none;
+      color: #aaaacc;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+    .links a:hover { border-color: #6666aa; color: #ffffff; background: #1a1a3a; }
+    .links a span { display: block; font-size: 22px; margin-bottom: 6px; }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 12px;
+      color: #44445a;
+      border-top: 1px solid #1a1a2e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>YORI</h1>
+  <p>サポートセンター</p>
+</header>
+
+<nav>
+  <a href="#faq">よくある質問</a>
+  <a href="#contact">お問い合わせ</a>
+  <a href="privacy.html">プライバシーポリシー</a>
+  <a href="terms.html">利用規約</a>
+</nav>
+
+<div class="container">
+
+  <!-- よくある質問 -->
+  <section id="faq">
+    <h2>よくある質問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">無料で使えますか？</div>
+      <div class="faq-a">
+        初回登録時に3日間の無料トライアルをご利用いただけます。トライアル終了後はライト（¥480/月）・スタンダード（¥980/月）・プレミアム（¥1,980/月）のいずれかのプランへの加入が必要です。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">サブスクリプションをキャンセルするには？</div>
+      <div class="faq-a">
+        iPhoneの「設定」→ 上部のお名前 →「サブスクリプション」→「Yori」→「サブスクリプションをキャンセルする」から手続きください。App内のサポートページからも同ページへ移動できます。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">購入の復元ができません</div>
+      <div class="faq-a">
+        アプリの「設定」画面にある「購入を復元する」ボタンをタップしてください。購入に使用したApple IDでサインインしている必要があります。改善しない場合はお問い合わせください。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">キャラクターを変更できますか？</div>
+      <div class="faq-a">
+        スタンダードプランは月1回、プレミアムプランはいつでもキャラクターを変更できます。ライトプランおよびトライアル期間中は変更できません。なお、交際中のキャラクターは別れてからでないと変更できません。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">アプリが正常に動作しません</div>
+      <div class="faq-a">
+        まずアプリを完全に終了して再起動をお試しください。改善しない場合は、iOSのバージョンとアプリのバージョン（設定画面に表示）をご確認のうえ、下記フォームよりお問い合わせください。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">個人情報はどのように扱われますか？</div>
+      <div class="faq-a">
+        取得する情報・利用目的・第三者提供の有無については<a href="privacy.html" style="color:#8888cc;">プライバシーポリシー</a>をご確認ください。会話内容はサービス改善のためにのみ使用し、第三者への販売は行いません。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">未成年でも利用できますか？</div>
+      <div class="faq-a">
+        本アプリは18歳以上を対象としています。18歳未満の方のご利用はお断りしております。
+      </div>
+    </div>
+
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <div class="contact-box">
+      <p>
+        ご不明な点・ご要望・不具合のご報告は<br>
+        メールにてお受けしております。<br>
+        通常2〜3営業日以内にご返信いたします。
+      </p>
+      <a href="mailto:yoriapp.support@gmail.com">メールで問い合わせる</a>
+      <p style="margin-top:16px; font-size:12px; color:#55556a;">
+        yoriapp.support@gmail.com
+      </p>
+    </div>
+  </section>
+
+  <!-- リンク -->
+  <section>
+    <h2>関連ページ</h2>
+    <div class="links">
+      <a href="privacy.html"><span>🔒</span>プライバシーポリシー</a>
+      <a href="terms.html"><span>📄</span>利用規約</a>
+      <a href="mailto:yoriapp.support@gmail.com"><span>✉️</span>お問い合わせ</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Masato Yamamoto. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
